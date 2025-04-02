@@ -129,8 +129,10 @@ GameObject:
   m_Component:
   - component: {fileID: 14311388}
   - component: {fileID: 14311387}
+  - component: {fileID: 14311389}
   - component: {fileID: 14311386}
-  m_Layer: 0
+  - component: {fileID: 14311390}
+  m_Layer: 10
   m_Name: Bunker_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,6 +255,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &14311389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14311385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815e879aa88d1174e9aa4e4e8936d4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &14311390
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14311385}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &118871007
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,8 +304,10 @@ GameObject:
   m_Component:
   - component: {fileID: 118871010}
   - component: {fileID: 118871009}
+  - component: {fileID: 118871011}
   - component: {fileID: 118871008}
-  m_Layer: 0
+  - component: {fileID: 118871012}
+  m_Layer: 10
   m_Name: Bunker_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,6 +430,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118871011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118871007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815e879aa88d1174e9aa4e4e8936d4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &118871012
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118871007}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +617,9 @@ GameObject:
   - component: {fileID: 688157206}
   - component: {fileID: 688157205}
   - component: {fileID: 688157204}
-  m_Layer: 0
+  - component: {fileID: 688157207}
+  - component: {fileID: 688157208}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,6 +742,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &688157207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688157203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3f466275f012a4a8a6331b3edbf109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 3341538925181341247, guid: 4255f7dd265e8994c9f64c0d9141dad9, type: 3}
+  speed: 5
+--- !u!50 &688157208
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688157203}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &799699539
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799699541}
   - component: {fileID: 799699540}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Invaders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,6 +820,32 @@ MonoBehaviour:
   - {fileID: 4114349401745515735, guid: bb7b279f9b9e62b4a87380425180653a, type: 3}
   rows: 5
   columns: 11
+  speed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 8
+      inSlope: 23.367
+      outSlope: 23.367
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.03676468
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  missilePrefab: {fileID: 8061688567079831156, guid: 22d1282d51250164d8be61c73cd66728, type: 3}
+  missleAttackRate: 1
 --- !u!4 &799699541
 Transform:
   m_ObjectHideFlags: 0
@@ -720,8 +871,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1389250385}
   - component: {fileID: 1389250384}
+  - component: {fileID: 1389250386}
   - component: {fileID: 1389250383}
-  m_Layer: 0
+  - component: {fileID: 1389250387}
+  m_Layer: 10
   m_Name: Bunker_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,6 +997,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1389250386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389250382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815e879aa88d1174e9aa4e4e8936d4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1389250387
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389250382}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1403685977
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +1046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403685980}
   - component: {fileID: 1403685979}
+  - component: {fileID: 1403685981}
   - component: {fileID: 1403685978}
   m_Layer: 0
   m_Name: MysteryShip
@@ -972,12 +1165,26 @@ Transform:
   m_GameObject: {fileID: 1403685977}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 13, z: 0}
+  m_LocalPosition: {x: -18, y: 13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1403685981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403685977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91ab8f00ec425e4793c00d08f5d3297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  timer: 30
 --- !u!1 &1562261209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,8 +1351,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2127175347}
   - component: {fileID: 2127175346}
+  - component: {fileID: 2127175348}
   - component: {fileID: 2127175345}
-  m_Layer: 0
+  - component: {fileID: 2127175349}
+  m_Layer: 10
   m_Name: Bunker_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1268,6 +1477,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2127175348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127175344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815e879aa88d1174e9aa4e4e8936d4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &2127175349
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127175344}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
